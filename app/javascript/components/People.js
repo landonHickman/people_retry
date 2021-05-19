@@ -11,10 +11,16 @@ const People = (props) => {
       return(
         <div>
           <h1>{person.name}</h1>
-          <p>{person.age}</p>
+          <h2>{person.age}</h2>
+          <div>
           <a href={`people/${person.id}`}>Show Profile</a>
+          </div>
+          <div>
           <a href={`people/${person.id}/edit`}>Edit Profile</a>
+          </div>
+          <div>
           <a href={`people/${person.id}`} data-method = "delete">Delete Profile</a>
+          </div>
         </div>
       )
     })
@@ -22,7 +28,7 @@ const People = (props) => {
   return(
     <div>
       <h1>My Favorite People</h1>
-      <a href="/pages/new">Create a New Profile</a>
+      <a href="/people/new">Create a New Profile</a>
       {renderPeople()}
     </div>
   )
