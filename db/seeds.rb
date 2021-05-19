@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require "faker"
+
+15.times do 
+  Person.create(
+    name: Faker::Name.unique.name,
+    age: Faker::Number.between(from: 15, to: 90),
+  )
+end
+
+puts "Seeded you have #{Person.all.size} pages."
