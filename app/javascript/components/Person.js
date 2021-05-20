@@ -6,7 +6,8 @@ const Person = (props) => {
     <div>
       <h1>{person.name}</h1>
       <p>{person.age}</p>
-      <a href="/people">Back to People</a>
+
+      <p><a href="/people">Back to People</a></p>
     </div>
   )
 }

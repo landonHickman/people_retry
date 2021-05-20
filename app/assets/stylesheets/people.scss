@@ -1,3 +1,33 @@
 // Place all the styles related to the people controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+  background-color: aliceblue;
+}
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align:center;
+}
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align:center;
+}
+a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+  text-align: center;
+  width: 100%;
+}
+#largefont {
+  font-size: 4em;
+}
+#border {
+  border-radius: 25px;
+  border: solid 3px black;
+  margin: 5px;
+}
+input {
+  margin: auto;
+}
